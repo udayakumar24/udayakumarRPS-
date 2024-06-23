@@ -34,7 +34,7 @@ class ShoppingCart {
     }
 
     public LinkedList<String> getCart() {
-        return new LinkedList<>(cart); // Return a copy to prevent modification
+        return new LinkedList<>(cart);
     }
 
     public void clearCart() {
