@@ -6,14 +6,14 @@ public class ShoppingApp {
         PurchaseHistory history = new PurchaseHistory();
         CustomerService service = new CustomerService();
 
-        // Shopping cart operations
+       
         cart.addItem("Apple");
         cart.addItem("Banana");
         cart.viewCart();
         cart.removeItem("Banana");
         cart.viewCart();
 
-        // Purchase history operations
+        
         history.savePurchase(cart.getCart());
         cart.addItem("Orange");
         history.savePurchase(cart.getCart());
@@ -21,7 +21,7 @@ public class ShoppingApp {
         history.undoLastPurchase();
         history.viewPurchaseHistory();
 
-        // Customer service operations
+       
         service.addRequest("Need help with my order.");
         service.addRequest("Change delivery address.");
         service.viewPendingRequests();
